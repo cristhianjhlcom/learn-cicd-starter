@@ -21,8 +21,8 @@ jobs:
 
           go-version: '1.23.0'
 
-      - name: tests
+      - name: Tests
         run: go test ./... -cover
 
-      - name: styles
+      - name: Style
         run: test -z $(go fmt ./...)
